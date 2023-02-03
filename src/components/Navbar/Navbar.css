@@ -1,0 +1,54 @@
+nav.navbar{
+    position: relative;
+    padding: 8px max(20px, 5vw);
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+}
+
+.logo{
+    height: 6vh;
+    width: 10vh;
+    background: url('../../../public/logo.jpg') center no-repeat;
+    background-size: contain;
+    border: 1px solid var(--purple-main);
+    border-radius: 8px;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu a{
+    margin: 0px 16px;
+    padding: 0px 4px;
+    overflow-x: hidden;
+    overflow-y: clip;
+    position: relative;
+    font-size: 1.5rem;
+    font-family: Aldo, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a::after, .menu a::before{
+    content: '';
+    width: calc(100% + 4px);
+	height: 4px;
+    background: var(--purple-main) no-repeat;
+    position: absolute;
+    bottom: -1px;
+    left: calc(-100% - 4px);
+    transition: all 0.2s ease;
+}
+
+.menu a:hover::after, .menu a:hover::before{
+    left: 0px;
+}

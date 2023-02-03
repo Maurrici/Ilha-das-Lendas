@@ -1,0 +1,100 @@
+:root{
+  --purple-main: #593ef0;
+  --black-main: #000;
+  --gray-main: #0f1519;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Aldo;
+  src: url('./assets/fonts/aldo_the_apache/AldotheApache.ttf');
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('./assets/fonts/Montserrat/Montserrat.ttf');
+}
+
+.App {
+  text-align: center;
+}
+
+body{
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, var(--black-main), #37269a);
+  color: white;
+}
+
+.container{
+  padding: max(20px, 5%) max(20px, 5%);
+}
+
+h1{
+  position: relative;
+  width: fit-content;
+  padding: 8px 8px;
+  margin: 16px 0px;
+  border-radius: 8px;
+  text-align: left;
+  color: white;
+  font-family: Aldo;
+  font-weight: 200;
+  font-size: 2rem;
+  background: linear-gradient(0deg, var(--black-main), #272727);
+}
+
+.rainbow:before, .rainbow:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+  border-radius: 8px;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+  #0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 40s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.rainbow:after {
+	filter: blur(50px);
+}
+
+.footer{
+  min-height: 20vh;
+  background-color: var(--black-main);
+  color: white;
+}
+
+.panel{
+  padding: 8px;
+  background-color: var(--gray-main);
+  border-top: 5px solid var(--purple-main);
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 500px) {
+  .container{
+    padding: max(20px, 5%) 2px;
+  }
+}

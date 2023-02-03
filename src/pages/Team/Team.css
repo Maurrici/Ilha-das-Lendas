@@ -1,0 +1,45 @@
+.title-display{
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title-name{
+    margin-left: 20px;
+    font-size: 3.5rem;
+    font-family: Aldo;
+}
+
+.title-shortName{
+    color: rgb(93, 92, 92);
+}
+
+.overall{
+    height: 100%;
+    display: flex;
+    color: var(--purple-main);
+    font-size: 8rem;
+    font-family: Aldo;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.overall span{
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.overall tspan{
+    font-size: 1rem;
+}
+
+.center-div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
