@@ -5,7 +5,7 @@ import Table from "../../components/Table/Table";
 
 
 const Home = () => {
-    const teams = DB.getTeamRankin();
+    const teams = DB.getTeamRanking();
     
     const headers = ["", "Times", "Overall"]
     return(

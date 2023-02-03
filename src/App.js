@@ -9,6 +9,7 @@ import Team from './pages/Team/Team';
 import Navbar from './components/Navbar/Navbar';
 import About from './pages/About/About';
 import Footer from './components/Footer/Footer';
+import Players from './pages/Players/Players';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/team/:id' element={<Team/>} />
-          <Route path='/about' element={<About/>} />v
+          <Route path='/about' element={<About/>} />
+          <Route path='/players' element={<Players/>} />
         </Routes>
         <Footer/>
       </BrowserRouter>

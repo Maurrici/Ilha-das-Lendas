@@ -10,6 +10,7 @@ const Table = ({type, data}) => {
                 <div className="table-row">
                     <div className="table-item number"></div>
                     <div className="table-item big">{type != "player" && "Nome"}</div>
+                    {type == "playerRanking" && <div className='table-item'>Rota</div>}
                     <div className="table-item">Overall</div>
                 </div>
             </div>
@@ -29,6 +30,15 @@ const Table = ({type, data}) => {
                             <Link key={item.id} to={`/player/${item.id}`} className="table-row">
                                 <div className="table-item number"><img src={item.img} alt={item.role} /></div>
                                 <div className="table-item big"><span>{item.nick}</span></div>
+                                <div className="table-item number">{item.overall}</div>
+                            </Link>
+                        )
+                    }else if(type == "playerRanking"){
+                        return(
+                            <Link key={item.id} to={`/player/${item.id}`} className="table-row">
+                                <div className="table-item number">{index + 1}</div>
+                                <div className="table-item big"><img src={item.img} alt={item.team} /><span>{item.nick}</span></div>
+                                <div className="table-item"><img src={`./role/${item.role}.svg`} alt={item.role} /></div>
                                 <div className="table-item number">{item.overall}</div>
                             </Link>
                         )
