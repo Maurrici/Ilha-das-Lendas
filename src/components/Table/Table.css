@@ -87,3 +87,28 @@
     background-color: none;
 }
 
+.pagination{
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination .page-default, .pagination .page-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 4px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    background-color: black;
+    color: #fff;
+    font-family: Aldo;
+    font-size: 1.3rem;
+}
+
+.pagination .page-default{
+    font-size: 1.1rem;
+}
+
