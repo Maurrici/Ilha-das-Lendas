@@ -20,7 +20,7 @@ ChartJS.register(
 
 function RadarChart(props) {
     const data = {
-      labels: ['Top', 'Mid', 'Sup', 'Adc', 'Jg'],
+      labels: ['Top', 'Jg', 'Sup', 'Adc', 'Mid'],
       datasets: [
         {
           label: false,

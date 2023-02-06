@@ -15,10 +15,10 @@ const Team = () => {
     const data = [0,0,0,0,0];
     team.players.forEach(player =>{
         if(player.role.toLocaleLowerCase() == "top") data[0] = player.overall;
-        else if(player.role.toLocaleLowerCase() == "mid") data[1] = player.overall;
+        else if(player.role.toLocaleLowerCase() == "jg") data[1] = player.overall;
         else if(player.role.toLocaleLowerCase() == "sup") data[2] = player.overall;
         else if(player.role.toLocaleLowerCase() == "adc") data[3] = player.overall;
-        else if(player.role.toLocaleLowerCase() == "jg") data[4] = player.overall;
+        else if(player.role.toLocaleLowerCase() == "mid") data[4] = player.overall;
     });
     
     return(

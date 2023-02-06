@@ -2,6 +2,7 @@
   --purple-main: #593ef0;
   --black-main: #000;
   --gray-main: #0f1519;
+  --second-gray: #3f3f3f;
 }
 
 *{
@@ -91,6 +92,16 @@ h1{
   background-color: var(--gray-main);
   border-top: 5px solid var(--purple-main);
   border-radius: 8px;
+}
+
+.sub-panel{
+  position: relative;
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 500px) {

@@ -6,25 +6,22 @@ const Pagination = ({total, page, setPage}) => {
         setPagesLink(() => {
             var newPages = [];
             for (let index = 0; index < total; index++) {
-                newPages.push(<button key={index} className="page-number" onClick={e => handlePage(index + 1)}>{index + 1}</button>);
+                newPages.push(<button key={index} className={page == index + 1 ? "page-number selected" : "page-number"} onClick={e => handlePage(index + 1)}>{index + 1}</button>);
             }
 
             return newPages;
         })
-    }, [total]);
+    }, [total, page]);
 
     const handleNext = () => {
         if(page < total) setPage(page + 1);
-        console.log(page);
     }
 
     const handlePrevious = () => {
         if(page > 1) setPage(page - 1);
-        console.log(page);
     }
 
     const handlePage = (page) => {
-        console.log(page);
         setPage(page);
     }
 
