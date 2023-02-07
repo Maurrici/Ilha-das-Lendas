@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Col, Row } from 'react-bootstrap';
 
 // CSS
 import './Table.css';
@@ -8,39 +9,48 @@ const Table = ({type, page = 1, data}) => {
     return(
         <div className="table">
             <div className="table-header">
-                <div className="table-row">
-                    <div className="table-item number"></div>
-                    <div className="table-item big">{type != "player" && "Nome"}</div>
-                    {type == "playerRanking" && <div className='table-item'>Rota</div>}
-                    <div className="table-item">Overall</div>
-                </div>
+                <Row className="w-100 justify-content-center">
+                    <Col sm={type === "team" ? 2 : 1} className="number"></Col>
+                    <Col sm={type === "team" ? 8 : 5} className="text-start">Nome</Col>
+                    {type === "playerRanking" && <Col sm className='text-center'>Nacionalidade</Col>}
+                    {type === "playerRanking" && <Col sm className='text-center'>Rota</Col>}
+                    <Col sm={type === "team" ? 2 : 1} className="text-center">Overall</Col>
+                </Row>
             </div>
             <div className="table-body">
             {
                 data.map((item, index) => {
-                    if(type == "team"){
+                    if(type === "team"){
                         return(
-                            <Link key={item.id} to={`/team/${item.id}`} className="table-row">
-                                <div className="table-item number">{baseNumber + index + 1}</div>
-                                <div className="table-item big"><img src={item.img} alt={item.name} /><span>{item.name}</span></div>
-                                <div className="table-item number">{item.overall}</div>
+                            <Link key={item.id} to={`/team/${item.id}`} className="row table-row w-100">
+                                <Col sm={2} className="table-item number d-flex justify-content-center">{baseNumber + index + 1}</Col>
+                                <Col sm={8} className="table-item"><img src={item.img} alt={item.name} /><span>{item.name}</span></Col>
+                                <Col sm={2} className="table-item number d-flex justify-content-center">{item.overall}</Col>
                             </Link>
                         )
-                    }else if(type == "player"){
+                    }else if(type === "player"){
                         return(
-                            <Link key={item.id} to={`/player/${item.id}`} className="table-row">
-                                <div className="table-item number"><img src={item.img} alt={item.role} /></div>
-                                <div className="table-item big"><span>{item.nick}</span></div>
-                                <div className="table-item number">{item.overall}</div>
+                            <Link key={item.id} to={`/player/${item.id}`} className="row table-row w-100">
+                                <Col sm={1} className="table-item number d-flex justify-content-center"><img src={`/role/${item.role}.svg`} alt={item.role} /></Col>
+                                <Col sm={5} className="table-item text-start">{item.nick}</Col>
+                                <Col sm={1} className="table-item number d-flex justify-content-center">{item.overall}</Col>
                             </Link>
                         )
-                    }else if(type == "playerRanking"){
+                    }else if(type === "playerRanking"){
                         return(
-                            <Link key={item.id} to={`/player/${item.id}`} className="table-row">
-                                <div className="table-item number">{baseNumber + index + 1}</div>
-                                <div className="table-item big"><img src={item.img} alt={item.team} /><span>{item.nick}</span></div>
-                                <div className="table-item"><img src={`./role/${item.role}.svg`} alt={item.role} /></div>
-                                <div className="table-item number">{item.overall}</div>
+                            <Link key={item.id} to={`/player/${item.id}`} className="row table-row w-100">
+                                <Col sm={1} className="table-item number d-flex justify-content-center">{baseNumber + index + 1}</Col>
+                                <Col sm={5} className="table-item text-start">
+                                    <img src={item.img} alt={item.team} />
+                                    <span>{item.nick}</span>
+                                </Col>
+                                <Col className="table-item d-flex justify-content-center">
+                                    <img src={`./country/${item.country}.svg`} width="30px" height="25px" />
+                                </Col>
+                                <Col className="table-item d-flex justify-content-center">
+                                    <img src={`./role/${item.role}.svg`} alt={item.role} />
+                                </Col>
+                                <Col sm={1} className="table-item number d-flex justify-content-center">{item.overall}</Col>
                             </Link>
                         )
                     }

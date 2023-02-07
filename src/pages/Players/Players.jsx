@@ -21,7 +21,7 @@ const Players = () => {
     const [country, setCountry] = useState('');
     const [team, setTeam] = useState('');
     const [page, setPage] = useState(1);
-    const [total, setTotal] = useState(Math.floor(playersFiltered.length/10));
+    const [total, setTotal] = useState(Math.ceil(playersFiltered.length/10));
 
     // Filtrando a lista
     useEffect(() => {
@@ -34,11 +34,15 @@ const Players = () => {
         if(team != ''){
             setPlayersFiltered((previousList) => previousList.filter(item => item.team === team));
         }
-    }, [role, team]);
+
+        if(country != ''){
+            setPlayersFiltered((previousList) => previousList.filter(item => item.country === country));
+        }
+    }, [role, team, country]);
 
     // Mudança de páginas
     useEffect(() => {
-        setTotal(Math.floor(playersFiltered.length/10));
+        setTotal(Math.ceil(playersFiltered.length/10));
         setPage(1);
     }, [playersFiltered]);
 

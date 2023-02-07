@@ -83,12 +83,61 @@ h1{
 
 .footer{
   min-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   background-color: var(--black-main);
   color: white;
 }
 
+.footer div{
+  width: 100%;
+}
+
+.footer div a{
+  text-decoration: none;
+  font-family: Aldo;
+  padding: 8px 16px;
+  color: #fff;
+}
+
+.footer div a{
+  width: fit-content;
+  margin: 0px 16px;
+  padding: 0px 4px;
+  overflow-x: hidden;
+  overflow-y: clip;
+  position: relative;
+  font-size: 1.5rem;
+  font-family: Aldo, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.footer div a::after, .footer div a::before{
+  content: '';
+  width: calc(100% + 4px);
+height: 4px;
+  background: var(--purple-main) no-repeat;
+  position: absolute;
+  bottom: -1px;
+  left: calc(-100% - 4px);
+  transition: all 0.2s ease;
+}
+
+.footer div a:hover::after, .footer div a:hover::before{
+  left: 0px;
+}
+
+.footer svg{
+  color: var(--purple-main);
+  margin-right: 0.5rem;
+}
+
 .panel{
-  padding: 8px;
+  padding: 8px 0px;
   background-color: var(--gray-main);
   border-top: 5px solid var(--purple-main);
   border-radius: 8px;

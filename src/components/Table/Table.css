@@ -39,8 +39,6 @@
 }
 
 .table-item{
-    width: max-content;
-    margin: 0px max(10px, 5%);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -53,10 +51,6 @@
 
 .table-item span{
     margin-left: 16px;
-}
-
-.table-item.big{
-    flex-grow: 2;
 }
 
 .table-header .table-item{
@@ -74,7 +68,6 @@
 }
 
 .table-item.number{
-    width: 35px;
     text-align: center;
     font-size: max(1.1rem, 2.5rem);
     font-family: Aldo;
