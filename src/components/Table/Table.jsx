@@ -31,7 +31,7 @@ const Table = ({type, page = 1, data}) => {
                     }else if(type === "player"){
                         return(
                             <Link key={item.id} to={`/player/${item.id}`} className="row table-row w-100">
-                                <Col sm={1} className="table-item number d-flex justify-content-center"><img src={`/role/${item.role}.svg`} alt={item.role} /></Col>
+                                <Col sm={1} className="table-item number d-flex justify-content-center"><img src={`./role/${item.role}.svg`} alt={item.role} /></Col>
                                 <Col sm={5} className="table-item text-start">{item.nick}</Col>
                                 <Col sm={1} className="table-item number d-flex justify-content-center">{item.overall}</Col>
                             </Link>
