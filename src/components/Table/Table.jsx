@@ -31,7 +31,7 @@ const Table = ({type, page = 1, data}) => {
                     }else if(type === "player"){
                         return(
                             <Link key={item.id} to={`/player/${item.id}`} className="row table-row w-100">
-                                <Col sm={1} className="table-item number d-flex justify-content-center"><img src={`./role/${item.role}.svg`} alt={item.role} /></Col>
+                                <Col sm={1} className="table-item number d-flex justify-content-center"><img src={`/role/${item.role}.svg`} alt={item.role} /></Col>
                                 <Col sm={5} className="table-item text-start">{item.nick}</Col>
                                 <Col sm={1} className="table-item number d-flex justify-content-center">{item.overall}</Col>
                             </Link>
@@ -45,10 +45,10 @@ const Table = ({type, page = 1, data}) => {
                                     <span>{item.nick}</span>
                                 </Col>
                                 <Col className="table-item d-flex justify-content-center">
-                                    <img src={`./country/${item.country}.svg`} width="30px" height="25px" />
+                                    <img src={`/country/${item.country}.svg`} width="30px" height="25px" />
                                 </Col>
                                 <Col className="table-item d-flex justify-content-center">
-                                    <img src={`./role/${item.role}.svg`} alt={item.role} />
+                                    <img src={`/role/${item.role}.svg`} alt={item.role} />
                                 </Col>
                                 <Col sm={1} className="table-item number d-flex justify-content-center">{item.overall}</Col>
                             </Link>

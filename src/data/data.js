@@ -3,7 +3,7 @@ const teams = [
         id: 1,
         name: "Fluxo",
         shortName: "FX",
-        img: "team/fluxo.png",
+        img: "/team/fluxo.png",
         players: [
             {
                 id: 1,
@@ -51,7 +51,7 @@ const teams = [
         id: 2,
         name: "Furia",
         shortName: "FUR",
-        img: "team/furia.png",
+        img: "/team/furia.png",
         players: [
             {
                 id: 6,
@@ -99,7 +99,7 @@ const teams = [
         id: 3,
         name: "INTZ",
         shortName: "ITZ",
-        img: "team/intz.png",
+        img: "/team/intz.png",
         players: [
             {
                 id: 11,
@@ -147,7 +147,7 @@ const teams = [
         id: 4,
         name: "Kabum",
         shortName: "KBM",
-        img: "team/kabum.png",
+        img: "/team/kabum.png",
         players: [
             {
                 id: 16,
@@ -195,7 +195,7 @@ const teams = [
         id: 5,
         name: "Keyd",
         shortName: "VKS",
-        img: "team/keyd.png",
+        img: "/team/keyd.png",
         players: [
             {
                 id: 21,
@@ -243,7 +243,7 @@ const teams = [
         id: 6,
         name: "Liberty",
         shortName: "LBR",
-        img: "team/liberty.png",
+        img: "/team/liberty.png",
         players: [
             {
                 id: 26,
@@ -291,7 +291,7 @@ const teams = [
         id: 7,
         name: "Los Grandes",
         shortName: "LOS",
-        img: "team/los grandes.png",
+        img: "/team/los grandes.png",
         players: [
             {
                 id: 31,
@@ -339,7 +339,7 @@ const teams = [
         id: 8,
         name: "Loud",
         shortName: "LLL",
-        img: "team/loud.png",
+        img: "/team/loud.png",
         players: [
             {
                 id: 36,
@@ -387,7 +387,7 @@ const teams = [
         id: 9,
         name: "Pain",
         shortName: "PNG",
-        img: "team/pain.png",
+        img: "/team/pain.png",
         players: [
             {
                 id: 41,
@@ -435,7 +435,7 @@ const teams = [
         id: 10,
         name: "Red",
         shortName: "RED",
-        img: "team/red.png",
+        img: "/team/red.png",
         players: [
             {
                 id: 46,
@@ -501,7 +501,7 @@ class DB {
             let overallCurrent = player.overallHistory.length - 1;
             player.overall = player.overallHistory[overallCurrent];
             player.team = team.name;
-            player.img = `./role/${player.role}.svg`;
+            player.img = `/role/${player.role}.svg`;
 
             return player;
         });
@@ -558,18 +558,18 @@ class DB {
 
     static getRoles(){
         return [
-            { name: "top", value: "top", img: "./role/top.png"},
-            { name: "jg", value: "jg", img: "./role/jg.png"},
-            { name: "mid", value: "mid", img: "./role/mid.png"},
-            { name: "adc", value: "adc", img: "./role/adc.png"},
-            { name: "sup", value: "sup", img: "./role/sup.png"}
+            { name: "top", value: "top", img: "/role/top.png"},
+            { name: "jg", value: "jg", img: "/role/jg.png"},
+            { name: "mid", value: "mid", img: "/role/mid.png"},
+            { name: "adc", value: "adc", img: "/role/adc.png"},
+            { name: "sup", value: "sup", img: "/role/sup.png"}
         ]
     }
 
     static getCountries(){
         return [
-            {name: "Brasil", value: "br", img: "./country/br.svg"},
-            {name: "Coreia do Sul", value: "kr", img: "./country/kr.svg" }
+            {name: "Brasil", value: "br", img: "/country/br.svg"},
+            {name: "Coreia do Sul", value: "kr", img: "/country/kr.svg" }
         ]
     }
 }
