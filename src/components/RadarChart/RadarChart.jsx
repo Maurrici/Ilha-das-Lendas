@@ -59,6 +59,7 @@ function RadarChart(props) {
             }
           },
           ticks:{
+            stepSize: 25,
             color: 'rgb(93, 92, 92)',
             showLabelBackdrop: false,
             font: {

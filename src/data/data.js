@@ -11,7 +11,9 @@ const teams = [
                 nick: "Tay",
                 role: "top",
                 overallHistory: [65, 63, 70, 73],
-                country: "br"
+                country: "br",
+                mvp: 1,
+                bagre: 0
             },
             {
                 id: 2,
@@ -19,7 +21,9 @@ const teams = [
                 nick: "Disamis",
                 role: "jg",
                 overallHistory: [75, 73, 75, 76],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 0
             },
             {
                 id: 3,
@@ -27,7 +31,9 @@ const teams = [
                 nick: "Hauz",
                 role: "mid",
                 overallHistory: [89, 79, 78, 81],
-                country: "br"
+                country: "br",
+                mvp: 1,
+                bagre: 1
             },
             {
                 id: 4,
@@ -35,7 +41,9 @@ const teams = [
                 nick: "Brance",
                 role: "adc",
                 overallHistory: [88, 84, 82, 82],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 2
             },
             {
                 id: 5,
@@ -43,7 +51,9 @@ const teams = [
                 nick: "Jojo",
                 role: "sup",
                 overallHistory: [90, 88, 85, 81],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 1
             },
         ]
     },
@@ -59,7 +69,9 @@ const teams = [
                 nick: "Fnb",
                 role: "top",
                 overallHistory: [93, 79, 82, 69],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 2
             },
             {
                 id: 7,
@@ -67,7 +79,9 @@ const teams = [
                 nick: "Goot",
                 role: "jg",
                 overallHistory: [72, 68, 71, 66],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 2
             },
             {
                 id: 8,
@@ -75,7 +89,9 @@ const teams = [
                 nick: "Envy",
                 role: "mid",
                 overallHistory: [85, 80, 85, 80],
-                country: "br"
+                country: "br",
+                mvp: 1,
+                bagre: 0
             },
             {
                 id: 9,
@@ -83,7 +99,9 @@ const teams = [
                 nick: "Trigo",
                 role: "adc",
                 overallHistory: [85, 83, 87, 81],
-                country: "br"
+                country: "br",
+                mvp: 1,
+                bagre: 0
             },
             {
                 id: 10,
@@ -91,7 +109,9 @@ const teams = [
                 nick: "Redbert",
                 role: "sup",
                 overallHistory: [87, 79, 84, 79],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 0
             },
         ]
     },
@@ -107,7 +127,9 @@ const teams = [
                 nick: "Zzk",
                 role: "top",
                 overallHistory: [60, 66, 72, 81],
-                country: "kr"
+                country: "kr",
+                mvp: 1,
+                bagre: 1
             },
             {
                 id: 12,
@@ -115,7 +137,9 @@ const teams = [
                 nick: "Yampi",
                 role: "jg",
                 overallHistory: [70, 70, 70, 78],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 0
             },
             {
                 id: 13,
@@ -123,7 +147,9 @@ const teams = [
                 nick: "Nosferus",
                 role: "mid",
                 overallHistory: [62, 71, 74, 83],
-                country: "br"
+                country: "br",
+                mvp: 2,
+                bagre: 0
             },
             {
                 id: 14,
@@ -131,7 +157,9 @@ const teams = [
                 nick: "Ninjakiwi",
                 role: "adc",
                 overallHistory: [59, 59, 69, 70],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 1
             },
             {
                 id: 15,
@@ -139,7 +167,9 @@ const teams = [
                 nick: "Nia",
                 role: "sup",
                 overallHistory: [50, 64, 69, 74],
-                country: "kr"
+                country: "kr",
+                mvp: 0,
+                bagre: 0
             },
         ]
     },
@@ -155,7 +185,9 @@ const teams = [
                 nick: "Lonely",
                 role: "top",
                 overallHistory: [73, 83, 90, 94],
-                country: "kr"
+                country: "kr",
+                mvp: 2,
+                bagre: 0
             },
             {
                 id: 17,
@@ -163,7 +195,9 @@ const teams = [
                 nick: "Scary",
                 role: "jg",
                 overallHistory: [61, 65, 73, 82],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 1
             },
             {
                 id: 18,
@@ -171,7 +205,9 @@ const teams = [
                 nick: "Yuri",
                 role: "mid",
                 overallHistory: [82, 82, 80, 86],
-                country: "kr"
+                country: "kr",
+                mvp: 0,
+                bagre: 1
             },
             {
                 id: 19,
@@ -179,7 +215,9 @@ const teams = [
                 nick: "Dudstheboy",
                 role: "adc",
                 overallHistory: [74, 68, 70, 83],
-                country: "br"
+                country: "br",
+                mvp: 2,
+                bagre: 1
             },
             {
                 id: 20,
@@ -187,7 +225,9 @@ const teams = [
                 nick: "Scuro",
                 role: "sup",
                 overallHistory: [69, 70, 72, 81],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 0
             },
         ]
     },
@@ -203,7 +243,9 @@ const teams = [
                 nick: "Guigo",
                 role: "top",
                 overallHistory: [75, 75, 73, 70],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 2
             },
             {
                 id: 22,
@@ -211,7 +253,9 @@ const teams = [
                 nick: "Hugato",
                 role: "jg",
                 overallHistory: [70, 75, 72, 67],
-                country: "br"
+                country: "br",
+                mvp: 1,
+                bagre: 1
             },
             {
                 id: 23,
@@ -219,7 +263,9 @@ const teams = [
                 nick: "Grevthar",
                 role: "mid",
                 overallHistory: [74, 77, 75, 71],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 0
             },
             {
                 id: 24,
@@ -227,7 +273,9 @@ const teams = [
                 nick: "Micao",
                 role: "adc",
                 overallHistory: [79, 76, 74, 67],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 2
             },
             {
                 id: 25,
@@ -235,7 +283,9 @@ const teams = [
                 nick: "Bounty",
                 role: "sup",
                 overallHistory: [66, 66, 66, 64],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 0
             },
         ]
     },
@@ -251,7 +301,9 @@ const teams = [
                 nick: "Kiari",
                 role: "top",
                 overallHistory: [69, 69, 69, 71],
-                country: "br"
+                country: "br",
+                mvp: 1,
+                bagre: 0
             },
             {
                 id: 27,
@@ -259,7 +311,9 @@ const teams = [
                 nick: "Accez",
                 role: "jg",
                 overallHistory: [63, 72, 72, 78],
-                country: "br"
+                country: "br",
+                mvp: 1,
+                bagre: 0
             },
             {
                 id: 28,
@@ -267,7 +321,9 @@ const teams = [
                 nick: "Piloto",
                 role: "mid",
                 overallHistory: [60, 68, 66, 66],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 2
             },
             {
                 id: 29,
@@ -275,7 +331,9 @@ const teams = [
                 nick: "Juliera",
                 role: "adc",
                 overallHistory: [70, 75, 71, 75],
-                country: "br"
+                country: "br",
+                mvp: 1,
+                bagre: 0
             },
             {
                 id: 30,
@@ -283,7 +341,9 @@ const teams = [
                 nick: "Cavalo",
                 role: "sup",
                 overallHistory: [72, 72, 67, 70],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 1
             },
         ]
     },
@@ -299,7 +359,9 @@ const teams = [
                 nick: "Hirit",
                 role: "top",
                 overallHistory: [95, 95, 93, 91],
-                country: "kr"
+                country: "kr",
+                mvp: 0,
+                bagre: 0
             },
             {
                 id: 32,
@@ -307,7 +369,9 @@ const teams = [
                 nick: "Ranger",
                 role: "jg",
                 overallHistory: [83, 78, 88, 90],
-                country: "br"
+                country: "br",
+                mvp: 2,
+                bagre: 1
             },
             {
                 id: 33,
@@ -315,7 +379,9 @@ const teams = [
                 nick: "Lava",
                 role: "mid",
                 overallHistory: [96, 91, 92, 90],
-                country: "kr"
+                country: "kr",
+                mvp: 1,
+                bagre: 0
             },
             {
                 id: 34,
@@ -323,7 +389,9 @@ const teams = [
                 nick: "Netuno",
                 role: "adc",
                 overallHistory: [82, 65, 80, 89],
-                country: "br"
+                country: "br",
+                mvp: 2,
+                bagre: 1
             },
             {
                 id: 35,
@@ -331,7 +399,9 @@ const teams = [
                 nick: "Zay",
                 role: "sup",
                 overallHistory: [70, 59, 71, 82],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 1
             },
         ]
     },
@@ -347,7 +417,9 @@ const teams = [
                 nick: "Robo",
                 role: "top",
                 overallHistory: [95, 93, 85, 83],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 2
             },
             {
                 id: 37,
@@ -355,7 +427,9 @@ const teams = [
                 nick: "Croc",
                 role: "jg",
                 overallHistory: [92, 92, 86, 82],
-                country: "kr"
+                country: "kr",
+                mvp: 1,
+                bagre: 1
             },
             {
                 id: 38,
@@ -363,7 +437,9 @@ const teams = [
                 nick: "Tinowns",
                 role: "mid",
                 overallHistory: [95, 95, 91, 89],
-                country: "br"
+                country: "br",
+                mvp: 1,
+                bagre: 0
             },
             {
                 id: 39,
@@ -371,7 +447,9 @@ const teams = [
                 nick: "Route",
                 role: "adc",
                 overallHistory: [91, 94, 89, 88],
-                country: "kr"
+                country: "kr",
+                mvp: 1,
+                bagre: 0
             },
             {
                 id: 40,
@@ -379,7 +457,9 @@ const teams = [
                 nick: "Ceos",
                 role: "sup",
                 overallHistory: [93, 94, 90, 90],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 0
             },
         ]
     },
@@ -395,7 +475,9 @@ const teams = [
                 nick: "Wizer",
                 role: "top",
                 overallHistory: [90, 88, 76, 70],
-                country: "kr"
+                country: "kr",
+                mvp: 1,
+                bagre: 0
             },
             {
                 id: 42,
@@ -403,7 +485,9 @@ const teams = [
                 nick: "Cariok",
                 role: "jg",
                 overallHistory: [87, 79, 66, 64],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 4
             },
             {
                 id: 43,
@@ -411,7 +495,9 @@ const teams = [
                 nick: "Dynquedo",
                 role: "mid",
                 overallHistory: [84, 79, 77, 80],
-                country: "br"
+                country: "br",
+                mvp: 1,
+                bagre: 0
             },
             {
                 id: 44,
@@ -419,7 +505,9 @@ const teams = [
                 nick: "Bvoy",
                 role: "adc",
                 overallHistory: [92, 91, 83, 82],
-                country: "kr"
+                country: "kr",
+                mvp: 0,
+                bagre: 0
             },
             {
                 id: 45,
@@ -427,7 +515,9 @@ const teams = [
                 nick: "Damage",
                 role: "sup",
                 overallHistory: [81, 79, 68, 67],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 0
             },
         ]
     },
@@ -443,7 +533,9 @@ const teams = [
                 nick: "Boal",
                 role: "top",
                 overallHistory: [67, 73, 81, 85],
-                country: "br"
+                country: "br",
+                mvp: 1,
+                bagre: 0
             },
             {
                 id: 47,
@@ -451,7 +543,9 @@ const teams = [
                 nick: "Aegis",
                 role: "jg",
                 overallHistory: [90, 91, 91, 91],
-                country: "br"
+                country: "br",
+                mvp: 0,
+                bagre: 0
             },
             {
                 id: 48,
@@ -459,7 +553,9 @@ const teams = [
                 nick: "Avenger",
                 role: "mid",
                 overallHistory: [65, 80, 83, 84],
-                country: "br"
+                country: "br",
+                mvp: 1,
+                bagre: 1
             },
             {
                 id: 49,
@@ -467,7 +563,9 @@ const teams = [
                 nick: "Titan",
                 role: "adc",
                 overallHistory: [93, 94, 95, 93],
-                country: "br"
+                country: "br",
+                mvp: 3,
+                bagre: 0
             },
             {
                 id: 50,
@@ -475,7 +573,9 @@ const teams = [
                 nick: "Kuri",
                 role: "sup",
                 overallHistory: [82, 88, 91, 91],
-                country: "kr"
+                country: "kr",
+                mvp: 0,
+                bagre: 0
             },
         ]
     },
@@ -537,12 +637,23 @@ class DB {
         return teamList;
     }
 
+    static getTopTeam(){
+        let teams = this.getTeamRanking();
+
+        return teams[0];
+    }
+
+    static getWorstTeam(){
+        let teams = this.getTeamRanking();
+
+        return teams[teams.length - 1];
+    }
+
     static getPlayerRanking(){
         let playerList = teams.reduce((total, team) => {
             team.players.forEach(player => {
                 let currentOverall = player.overallHistory.length - 1;
                 player.overall = player.overallHistory[currentOverall];
-                player.img = team.img;
                 player.team = team.name;
 
                 total.push(player);
@@ -554,6 +665,59 @@ class DB {
         playerList = playerList.sort((a, b) => b.overall - a.overall);
 
         return playerList;
+    }
+
+    static getPlayer(id){
+        let player;
+
+        for(const team of teams) {
+            player = team.players.find(p => p.id === id);
+            if(player != undefined){
+                player.team = team.name;
+                break;
+            }
+        }
+
+        // Set Current Overall
+        let currentIndex = player.overallHistory.length - 1;
+        player.overall = player.overallHistory[currentIndex];
+
+        // Set img
+        if(player.overall >= 50 && player.overall < 60) player.img = `/player/50/${player.nick.toLowerCase()}.png`;
+        else if(player.overall >= 60 && player.overall < 70) player.img = `/player/60/${player.nick.toLowerCase()}.png`;
+        else if(player.overall >= 70 && player.overall < 80) player.img = `/player/70/${player.nick.toLowerCase()}.png`;
+        else if(player.overall >= 80 && player.overall < 90) player.img = `/player/80/${player.nick.toLowerCase()}.png`;
+        else if(player.overall >= 90) player.img = `/player/90/${player.nick.toLowerCase()}.png`;
+
+        return player;
+    }
+
+    static getTopPlayer(){
+        let players = this.getPlayerRanking();
+
+        return this.getPlayer(players[0].id);
+    }
+
+    static getWorstPlayer(){
+        let players = this.getPlayerRanking();
+
+        return this.getPlayer(players[players.length - 1].id);
+    }
+
+    static getTopMVP(){
+        let players = this.getPlayerRanking();
+
+        players = players.sort((a, b) => b.mvp - a.mvp);
+
+        return this.getPlayer(players[0].id);
+    }
+
+    static getTopBagre(){
+        let players = this.getPlayerRanking();
+
+        players = players.sort((a, b) => b.bagre - a.bagre);
+
+        return this.getPlayer(players[0].id);
     }
 
     static getRoles(){

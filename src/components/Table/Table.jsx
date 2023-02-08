@@ -41,7 +41,7 @@ const Table = ({type, page = 1, data}) => {
                             <Link key={item.id} to={`/player/${item.id}`} className="row table-row w-100">
                                 <Col sm={1} className="table-item number d-flex justify-content-center">{baseNumber + index + 1}</Col>
                                 <Col sm={5} className="table-item text-start">
-                                    <img src={item.img} alt={item.team} />
+                                    <img src={`/team/${item.team.toLowerCase()}.png`} alt={item.team} />
                                     <span>{item.nick}</span>
                                 </Col>
                                 <Col className="table-item d-flex justify-content-center">
