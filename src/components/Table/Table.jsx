@@ -19,19 +19,19 @@ const Table = ({type, page = 1, data}) => {
             </div>
             <div className="table-body">
             {
-                data.map((item, index) => {
+                data !== undefined && data.map((item, index) => {
                     if(type === "team"){
                         return(
                             <Link key={item.id} to={`/team/${item.id}`} className="row table-row w-100">
                                 <Col sm={2} className="table-item number d-flex justify-content-center">{baseNumber + index + 1}</Col>
-                                <Col sm={8} className="table-item"><img src={item.img} alt={item.name} /><span>{item.name}</span></Col>
+                                <Col sm={8} className="table-item"><img src={`${process.env.PUBLIC_URL}` +item.img} alt={item.name} /><span>{item.name}</span></Col>
                                 <Col sm={2} className="table-item number d-flex justify-content-center">{item.overall}</Col>
                             </Link>
                         )
                     }else if(type === "player"){
                         return(
                             <Link key={item.id} to={`/player/${item.id}`} className="row table-row w-100">
-                                <Col sm={1} className="table-item number d-flex justify-content-center"><img src={`/role/${item.role}.svg`} alt={item.role} /></Col>
+                                <Col sm={1} className="table-item number d-flex justify-content-center"><img src={`${process.env.PUBLIC_URL}/role/${item.role}.svg`} alt={item.role} /></Col>
                                 <Col sm={5} className="table-item text-start">{item.nick}</Col>
                                 <Col sm={1} className="table-item number d-flex justify-content-center">{item.overall}</Col>
                             </Link>
@@ -41,18 +41,20 @@ const Table = ({type, page = 1, data}) => {
                             <Link key={item.id} to={`/player/${item.id}`} className="row table-row w-100">
                                 <Col sm={1} className="table-item number d-flex justify-content-center">{baseNumber + index + 1}</Col>
                                 <Col sm={5} className="table-item text-start">
-                                    <img src={`/team/${item.team.toLowerCase()}.png`} alt={item.team} />
+                                    <img src={`${process.env.PUBLIC_URL}/team/${item.team.toLowerCase()}.png`} alt={item.team} />
                                     <span>{item.nick}</span>
                                 </Col>
                                 <Col className="table-item d-flex justify-content-center">
-                                    <img src={`/country/${item.country}.svg`} width="30px" height="25px" />
+                                    <img src={`${process.env.PUBLIC_URL}/country/${item.country}.svg`} alt={item.country} width="30px" height="25px" />
                                 </Col>
                                 <Col className="table-item d-flex justify-content-center">
-                                    <img src={`/role/${item.role}.svg`} alt={item.role} />
+                                    <img src={`${process.env.PUBLIC_URL}/role/${item.role}.svg`} alt={item.role} />
                                 </Col>
                                 <Col sm={1} className="table-item number d-flex justify-content-center">{item.overall}</Col>
                             </Link>
                         )
+                    }else{
+                        return <></>
                     }
                 })
             }

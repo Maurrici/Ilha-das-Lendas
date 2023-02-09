@@ -23,14 +23,14 @@ const Team = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col sm={12} md={3}>
-                        <img className="img-fluid" src={`/team/${player.team.toLowerCase()}.png`} alt={player.team} />
+                    <Col sm={12} md={3} className="d-flex justify-content-center aligm-items-center">
+                        <img className="img-fluid" src={`${process.env.PUBLIC_URL}/team/${player.team.toLowerCase()}.png`} alt={player.team} />
                     </Col>
                 </Row>
                 <Row>
                     <Col md>
                         <div className="card-player">
-                            <img src={player.img} alt={player.nick} />
+                            <img src={`${process.env.PUBLIC_URL}` +player.img} alt={player.nick} />
                         </div>
                     </Col>
                     <Col sm={12} md> 

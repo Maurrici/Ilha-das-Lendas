@@ -672,7 +672,7 @@ class DB {
 
         for(const team of teams) {
             player = team.players.find(p => p.id === id);
-            if(player != undefined){
+            if(player !== undefined){
                 player.team = team.name;
                 break;
             }

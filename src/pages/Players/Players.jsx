@@ -8,7 +8,7 @@ import DB from "../../data/data";
 const Players = () => {
 
     // Dados
-    const players = DB.getPlayerRanking();
+    const [players] = useState(DB.getPlayerRanking());
     const roles = DB.getRoles();
     const coutries = DB.getCountries();
     const teams = DB.getTeams();
@@ -25,20 +25,20 @@ const Players = () => {
 
     // Filtrando a lista
     useEffect(() => {
-        if(role == '' || team == '' || country == '') setPlayersFiltered(players);
+        if(role === '' || team === '' || country === '') setPlayersFiltered(players);
 
-        if(role != ''){
+        if(role !== ''){
             setPlayersFiltered((previousList) => previousList.filter(item => item.role === role));
         }
 
-        if(team != ''){
+        if(team !== ''){
             setPlayersFiltered((previousList) => previousList.filter(item => item.team === team));
         }
 
-        if(country != ''){
+        if(country !== ''){
             setPlayersFiltered((previousList) => previousList.filter(item => item.country === country));
         }
-    }, [role, team, country]);
+    }, [role, team, country, players]);
 
     // Mudança de páginas
     useEffect(() => {

@@ -181,7 +181,7 @@ h4{
   padding: 8px;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   text-align: start;
   font-family: Aldo;
   font-size: 2rem;
@@ -200,7 +200,7 @@ h4{
 }
 .card-details div div:last-child{
   padding: 0px 8px;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .panel{
@@ -234,6 +234,12 @@ h4{
 
 .card-display-body{
   background-color: #3027676c;
+  transition: 0.8s;
+}
+
+.card-display-body:hover{
+  cursor: pointer;
+  background-color: #4436a1ea;
 }
 
 .card-display-body{

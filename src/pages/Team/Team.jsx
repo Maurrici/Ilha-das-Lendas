@@ -45,7 +45,7 @@ const Team = () => {
                 <Row>
                     <Col md>
                         <div className="title-display">
-                            <img src={team.img} alt="Fluxo" />
+                            <img src={`${process.env.PUBLIC_URL}` +team.img} alt={team.name} />
                             <div className="title-name">
                                 {team.name} <span className="title-shortName">{team.shortName}</span>
                             </div>
