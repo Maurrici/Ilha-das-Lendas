@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.3efe4ac0.css",
-    "main.js": "/static/js/main.a0c9b338.js",
-    "static/js/787.6180ccfa.chunk.js": "/static/js/787.6180ccfa.chunk.js",
-    "static/media/Montserrat.ttf": "/static/media/Montserrat.3faa3eef13649db02044.ttf",
-    "static/media/logo.jpg": "/static/media/logo.5c731a2a160633cee676.jpg",
-    "static/media/AldotheApache.ttf": "/static/media/AldotheApache.96b6ca13f61531070eab.ttf",
-    "index.html": "/index.html",
-    "main.3efe4ac0.css.map": "/static/css/main.3efe4ac0.css.map",
-    "main.a0c9b338.js.map": "/static/js/main.a0c9b338.js.map",
-    "787.6180ccfa.chunk.js.map": "/static/js/787.6180ccfa.chunk.js.map"
+    "main.css": "/Ilha-das-Lendas/static/css/main.6a5b5287.css",
+    "main.js": "/Ilha-das-Lendas/static/js/main.d5689b04.js",
+    "static/js/787.6180ccfa.chunk.js": "/Ilha-das-Lendas/static/js/787.6180ccfa.chunk.js",
+    "static/media/Montserrat.ttf": "/Ilha-das-Lendas/static/media/Montserrat.3faa3eef13649db02044.ttf",
+    "static/media/logo.jpg": "/Ilha-das-Lendas/static/media/logo.5c731a2a160633cee676.jpg",
+    "static/media/AldotheApache.ttf": "/Ilha-das-Lendas/static/media/AldotheApache.96b6ca13f61531070eab.ttf",
+    "index.html": "/Ilha-das-Lendas/index.html",
+    "main.6a5b5287.css.map": "/Ilha-das-Lendas/static/css/main.6a5b5287.css.map",
+    "main.d5689b04.js.map": "/Ilha-das-Lendas/static/js/main.d5689b04.js.map",
+    "787.6180ccfa.chunk.js.map": "/Ilha-das-Lendas/static/js/787.6180ccfa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3efe4ac0.css",
-    "static/js/main.a0c9b338.js"
+    "static/css/main.6a5b5287.css",
+    "static/js/main.d5689b04.js"
   ]
 }
