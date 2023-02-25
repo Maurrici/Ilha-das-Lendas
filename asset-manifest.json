@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Ilha-das-Lendas/static/css/main.28f9265d.css",
-    "main.js": "/Ilha-das-Lendas/static/js/main.5789ef68.js",
+    "main.js": "/Ilha-das-Lendas/static/js/main.ea9cbe02.js",
     "static/js/787.6180ccfa.chunk.js": "/Ilha-das-Lendas/static/js/787.6180ccfa.chunk.js",
     "static/media/Montserrat.ttf": "/Ilha-das-Lendas/static/media/Montserrat.3faa3eef13649db02044.ttf",
     "static/media/logo.jpg": "/Ilha-das-Lendas/static/media/logo.5c731a2a160633cee676.jpg",
     "static/media/AldotheApache.ttf": "/Ilha-das-Lendas/static/media/AldotheApache.96b6ca13f61531070eab.ttf",
     "index.html": "/Ilha-das-Lendas/index.html",
     "main.28f9265d.css.map": "/Ilha-das-Lendas/static/css/main.28f9265d.css.map",
-    "main.5789ef68.js.map": "/Ilha-das-Lendas/static/js/main.5789ef68.js.map",
+    "main.ea9cbe02.js.map": "/Ilha-das-Lendas/static/js/main.ea9cbe02.js.map",
     "787.6180ccfa.chunk.js.map": "/Ilha-das-Lendas/static/js/787.6180ccfa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.28f9265d.css",
-    "static/js/main.5789ef68.js"
+    "static/js/main.ea9cbe02.js"
   ]
 }
