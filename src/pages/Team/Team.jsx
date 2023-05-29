@@ -15,17 +15,18 @@ const Team = () => {
     // Radial Chart data
     const dataRadial = [0,0,0,0,0];
     team.players.forEach(player =>{
-        if(player.role.toLocaleLowerCase() === "top") dataRadial[0] = player.overall;
-        else if(player.role.toLocaleLowerCase() === "jg") dataRadial[1] = player.overall;
-        else if(player.role.toLocaleLowerCase() === "sup") dataRadial[2] = player.overall;
-        else if(player.role.toLocaleLowerCase() === "adc") dataRadial[3] = player.overall;
-        else if(player.role.toLocaleLowerCase() === "mid") dataRadial[4] = player.overall;
+        if(player.starter){
+            if(player.role.toLocaleLowerCase() === "top") dataRadial[0] = player.overall;
+            else if(player.role.toLocaleLowerCase() === "jg") dataRadial[1] = player.overall;
+            else if(player.role.toLocaleLowerCase() === "sup") dataRadial[2] = player.overall;
+            else if(player.role.toLocaleLowerCase() === "adc") dataRadial[3] = player.overall;
+            else if(player.role.toLocaleLowerCase() === "mid") dataRadial[4] = player.overall;
+        }
     });
 
     // Linear Chart data
     const dataLinear = [];
     const arrayOverall = team.players.map(player => player.overallHistory);
-    console.log(arrayOverall);
     let sum;
     let media;
     for(let i = 0; i < arrayOverall[0].length; i++){

@@ -7,7 +7,6 @@ import DB from "../../data/data";
 const Team = () => {
     const {id} = useParams();
     const player = DB.getPlayer(parseInt(id));
-    console.log(player);
 
     // Linear Chart data
     const dataLinear = player.overallHistory;
@@ -30,7 +29,9 @@ const Team = () => {
                 <Row>
                     <Col md>
                         <div className="card-player">
-                            <img src={`${process.env.PUBLIC_URL}` +player.img} alt={player.nick} />
+                            <div className="card-img" style={{backgroundImage: `url(${process.env.PUBLIC_URL + player.img})`}}>
+                                <div className="card-overall">{player.overall}</div>
+                            </div>
                         </div>
                     </Col>
                     <Col sm={12} md> 

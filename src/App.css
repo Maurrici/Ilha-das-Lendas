@@ -168,11 +168,33 @@ h4{
   justify-content: center;
 }
 
-.card-player img{
-  z-index: 2;
+.card-player .card-img{
   position: relative;
+  width: 208px;
+  height: 313px;
   border-radius: 16px;
   box-shadow: 0px 0px 40px var(--purple-main);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-team .card-player .card-img{
+ background-size: inherit !important; 
+}
+
+.card-player .card-overall{
+  position: absolute;
+  top: 65px;
+  left: 9px;
+  padding: 4px 18px;
+  border-radius: 6px;
+  background-color: #593ef0f8;
+  color: #fff;
+  font-family: Aldo;
+  font-size: 2.4rem;
+  line-height: 2.1rem;
+  z-index: 5;
 }
 
 .card-details{
@@ -280,6 +302,18 @@ h4{
 }
 
 @media screen and (max-width: 500px) {
+  html{
+    font-size: 14px;
+  }
+
+  .table-item img {
+    max-height: 60px !important;
+  }
+
+  .table-item img.country, .table-item img.role {
+    width: 30px;
+  }
+
   .container{
     padding: max(20px, 5%) 2px;
   }

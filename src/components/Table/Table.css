@@ -40,6 +40,7 @@
 
 .table-item{
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;

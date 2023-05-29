@@ -10,9 +10,10 @@ const teams = [
                 name: "Rodrigo Panisa",
                 nick: "Tay",
                 role: "top",
-                overallHistory: [65, 63, 70, 73],
+                overallHistory: [65, 63, 70, 73, 78, 84, 89, 83],
+                starter: true,
                 country: "br",
-                mvp: 1,
+                mvp: 3,
                 bagre: 0
             },
             {
@@ -20,19 +21,21 @@ const teams = [
                 name: "Pedro Cavalvante",
                 nick: "Disamis",
                 role: "jg",
-                overallHistory: [75, 73, 75, 76],
+                overallHistory: [75, 73, 75, 76, 83, 84, 86, 83],
+                starter: true,
                 country: "br",
-                mvp: 0,
-                bagre: 0
+                mvp: 1,
+                bagre: 1
             },
             {
                 id: 3,
                 name: "Bruno Ferreira",
                 nick: "Hauz",
                 role: "mid",
-                overallHistory: [89, 79, 78, 81],
+                overallHistory: [89, 79, 78, 81, 86, 91, 91, 89],
+                starter: true,
                 country: "br",
-                mvp: 1,
+                mvp: 3,
                 bagre: 1
             },
             {
@@ -40,7 +43,8 @@ const teams = [
                 name: "Diego Amaral",
                 nick: "Brance",
                 role: "adc",
-                overallHistory: [88, 84, 82, 82],
+                overallHistory: [88, 84, 82, 82, 82, 86, 88, 86],
+                starter: true,
                 country: "br",
                 mvp: 0,
                 bagre: 2
@@ -50,9 +54,10 @@ const teams = [
                 name: "Gabriel Dzelme",
                 nick: "Jojo",
                 role: "sup",
-                overallHistory: [90, 88, 85, 81],
+                overallHistory: [90, 88, 85, 81, 81, 87, 88, 86],
+                starter: true,
                 country: "br",
-                mvp: 0,
+                mvp: 2,
                 bagre: 1
             },
         ]
@@ -68,27 +73,30 @@ const teams = [
                 name: "Natan Braz",
                 nick: "Fnb",
                 role: "top",
-                overallHistory: [93, 79, 82, 69],
+                overallHistory: [93, 79, 82, 69, 72, 78, 82, 77],
+                starter: true,
                 country: "br",
                 mvp: 0,
-                bagre: 2
+                bagre: 5
             },
             {
                 id: 7,
                 name: "Gabriel da Luz",
                 nick: "Goot",
                 role: "jg",
-                overallHistory: [72, 68, 71, 66],
+                overallHistory: [72, 68, 71, 66, 70, 72, 78, 77],
+                starter: true,
                 country: "br",
                 mvp: 0,
-                bagre: 2
+                bagre: 3
             },
             {
                 id: 8,
                 name: "Bruno Farias",
                 nick: "Envy",
                 role: "mid",
-                overallHistory: [85, 80, 85, 80],
+                overallHistory: [85, 80, 85, 80, 79, 76, 81, 79],
+                starter: true,
                 country: "br",
                 mvp: 1,
                 bagre: 0
@@ -98,19 +106,32 @@ const teams = [
                 name: "Matheus Nóbrega",
                 nick: "Trigo",
                 role: "adc",
-                overallHistory: [85, 83, 87, 81],
+                overallHistory: [85, 83, 87, 81, 83, 79, 81, 79],
+                starter: true,
                 country: "br",
-                mvp: 1,
-                bagre: 0
+                mvp: 2,
+                bagre: 1
             },
             {
                 id: 10,
                 name: "Ygor Freitas",
                 nick: "Redbert",
                 role: "sup",
-                overallHistory: [87, 79, 84, 79],
+                overallHistory: [87, 79, 84, 79, 77, 77],
+                starter: false,
                 country: "br",
-                mvp: 0,
+                mvp: 1,
+                bagre: 0
+            },
+            {
+                id: 60,
+                name: "Andrey Saraiva",
+                nick: "Ayu",
+                role: "sup",
+                overallHistory: [0, 0, 0, 0, 50, 74, 84, 82],
+                starter: true,
+                country: "br",
+                mvp: 3,
                 bagre: 0
             },
         ]
@@ -126,7 +147,8 @@ const teams = [
                 name: "Kwen Hee Won",
                 nick: "Zzk",
                 role: "top",
-                overallHistory: [60, 66, 72, 81],
+                overallHistory: [60, 66, 72, 81, 77, 75, 73, 70],
+                starter: true,
                 country: "kr",
                 mvp: 1,
                 bagre: 1
@@ -136,29 +158,32 @@ const teams = [
                 name: "Yan Petermann",
                 nick: "Yampi",
                 role: "jg",
-                overallHistory: [70, 70, 70, 78],
+                overallHistory: [70, 70, 70, 78, 77, 77, 77, 75],
+                starter: true,
                 country: "br",
                 mvp: 0,
-                bagre: 0
+                bagre: 2
             },
             {
                 id: 13,
                 name: "Júlio Cezar Cruz",
                 nick: "Nosferus",
                 role: "mid",
-                overallHistory: [62, 71, 74, 83],
+                overallHistory: [62, 71, 74, 83, 76, 76, 79, 78],
+                starter: true,
                 country: "br",
                 mvp: 2,
-                bagre: 0
+                bagre: 1
             },
             {
                 id: 14,
                 name: "Yudi Miyashiro",
                 nick: "Ninjakiwi",
                 role: "adc",
-                overallHistory: [59, 59, 69, 70],
+                overallHistory: [59, 59, 69, 70, 76, 78, 79, 81],
+                starter: true,
                 country: "br",
-                mvp: 0,
+                mvp: 1,
                 bagre: 1
             },
             {
@@ -166,7 +191,8 @@ const teams = [
                 name: "Woo Jun Sung",
                 nick: "Nia",
                 role: "sup",
-                overallHistory: [50, 64, 69, 74],
+                overallHistory: [50, 64, 69, 74, 73, 73, 72, 72],
+                starter: true,
                 country: "kr",
                 mvp: 0,
                 bagre: 0
@@ -184,7 +210,8 @@ const teams = [
                 name: "Gyujun Han",
                 nick: "Lonely",
                 role: "top",
-                overallHistory: [73, 83, 90, 94],
+                overallHistory: [73, 83, 90, 94, 92, 85, 83, 85],
+                starter: true,
                 country: "kr",
                 mvp: 2,
                 bagre: 0
@@ -194,7 +221,8 @@ const teams = [
                 name: "Artur Scalabrin",
                 nick: "Scary",
                 role: "jg",
-                overallHistory: [61, 65, 73, 82],
+                overallHistory: [61, 65, 73, 82, 85, 80, 76, 74],
+                starter: true,
                 country: "br",
                 mvp: 0,
                 bagre: 1
@@ -204,31 +232,57 @@ const teams = [
                 name: "Cha Hee-min",
                 nick: "Yuri",
                 role: "mid",
-                overallHistory: [82, 82, 80, 86],
+                overallHistory: [82, 82, 80, 86, 85, 77, 71, 72],
+                starter: true,
                 country: "kr",
                 mvp: 0,
-                bagre: 1
+                bagre: 5
             },
             {
                 id: 19,
                 name: "Igor Lima",
                 nick: "Dudstheboy",
                 role: "adc",
-                overallHistory: [74, 68, 70, 83],
+                overallHistory: [74, 68, 70, 83, 83, 80, 80, 80],
+                starter: false,
                 country: "br",
                 mvp: 2,
-                bagre: 1
+                bagre: 2
             },
             {
                 id: 20,
                 name: "Gabriel Scuro",
                 nick: "Scuro",
                 role: "sup",
-                overallHistory: [69, 70, 72, 81],
+                overallHistory: [69, 70, 72, 81, 78, 78, 78, 78],
+                starter: false,
                 country: "br",
-                mvp: 0,
+                mvp: 1,
                 bagre: 0
             },
+            {
+                id: 201,
+                name: "",
+                nick: "Rav3n",
+                role: "adc",
+                overallHistory: [50, 50, 50, 50, 50, 50, 50, 73],
+                starter: true,
+                country: "br",
+                mvp: 1,
+                bagre: 0
+            },
+            {
+                id: 202,
+                name: "",
+                nick: "Guigs",
+                role: "sup",
+                overallHistory: [50, 50, 50, 50, 50, 50, 50, 71],
+                starter: true,
+                country: "br",
+                mvp: 1,
+                bagre: 0
+            },
+
         ]
     },
     {
@@ -242,7 +296,8 @@ const teams = [
                 name: "Guilherme Ruiz",
                 nick: "Guigo",
                 role: "top",
-                overallHistory: [75, 75, 73, 70],
+                overallHistory: [75, 75, 73, 70, 72, 81, 86, 86],
+                starter: true,
                 country: "br",
                 mvp: 0,
                 bagre: 2
@@ -252,7 +307,8 @@ const teams = [
                 name: "Hugo Dias",
                 nick: "Hugato",
                 role: "jg",
-                overallHistory: [70, 75, 72, 67],
+                overallHistory: [70, 75, 72, 67, 67, 67],
+                starter: false,
                 country: "br",
                 mvp: 1,
                 bagre: 1
@@ -262,17 +318,19 @@ const teams = [
                 name: "Daniel Ferreira",
                 nick: "Grevthar",
                 role: "mid",
-                overallHistory: [74, 77, 75, 71],
+                overallHistory: [74, 77, 75, 71, 69, 75, 78, 79],
+                starter: true,
                 country: "br",
                 mvp: 0,
-                bagre: 0
+                bagre: 1
             },
             {
                 id: 24,
                 name: "Micael Rodrigues",
                 nick: "Micao",
                 role: "adc",
-                overallHistory: [79, 76, 74, 67],
+                overallHistory: [79, 76, 74, 68, 68, 68],
+                starter: false,
                 country: "br",
                 mvp: 0,
                 bagre: 2
@@ -282,11 +340,56 @@ const teams = [
                 name: "Gabriel Donner",
                 nick: "Bounty",
                 role: "sup",
-                overallHistory: [66, 66, 66, 64],
+                overallHistory: [66, 66, 66, 64, 64, 64],
+                starter: false,
                 country: "br",
                 mvp: 0,
                 bagre: 0
             },
+            {
+                id: 51,
+                name: "Miguel Rezek",
+                nick: "Stepz",
+                role: "adc",
+                overallHistory: [0, 0, 0, 50, 51, 59, 70, 71],
+                starter: true,
+                country: "br",
+                mvp: 0,
+                bagre: 3
+            },
+            {
+                id: 52,
+                name: "Marcos Henrique",
+                nick: "Krastyel",
+                role: "sup",
+                overallHistory: [0, 0, 0, 50, 56, 63, 64, 70],
+                starter: true,
+                country: "br",
+                mvp: 1,
+                bagre: 1
+            },
+            {
+                id: 53,
+                name: "Gustavo Dirami",
+                nick: "Sting",
+                role: "jg",
+                overallHistory: [0, 0, 0, 50, 58, 58],
+                starter: false,
+                country: "br",
+                mvp: 0,
+                bagre: 0
+            },
+            {
+                id: 54,
+                name: "Jesús Alberto",
+                nick: "Grell",
+                role: "jg",
+                overallHistory: [0, 0, 0, 0, 50, 79, 88, 90],
+                starter: true,
+                country: "br",
+                mvp: 2,
+                bagre: 0
+            }
         ]
     },
     {
@@ -300,37 +403,41 @@ const teams = [
                 name: "Thiago Campos",
                 nick: "Kiari",
                 role: "top",
-                overallHistory: [69, 69, 69, 71],
+                overallHistory: [69, 69, 69, 71, 73, 75, 74, 74],
+                starter: true,
                 country: "br",
-                mvp: 1,
-                bagre: 0
+                mvp: 2,
+                bagre: 2
             },
             {
                 id: 27,
                 name: "Lucas Miranda",
                 nick: "Accez",
                 role: "jg",
-                overallHistory: [63, 72, 72, 78],
+                overallHistory: [63, 72, 72, 78, 79, 82, 79, 76],
+                starter: true,
                 country: "br",
-                mvp: 1,
-                bagre: 0
+                mvp: 2,
+                bagre: 1
             },
             {
                 id: 28,
                 name: "Elvis Vergara",
                 nick: "Piloto",
                 role: "mid",
-                overallHistory: [60, 68, 66, 66],
+                overallHistory: [60, 68, 66, 66, 70, 73, 68, 64],
+                starter: true,
                 country: "br",
                 mvp: 0,
-                bagre: 2
+                bagre: 5
             },
             {
                 id: 29,
                 name: "Julio Henrique",
                 nick: "Juliera",
                 role: "adc",
-                overallHistory: [70, 75, 71, 75],
+                overallHistory: [70, 75, 71, 75, 76, 80, 76, 72],
+                starter: true,
                 country: "br",
                 mvp: 1,
                 bagre: 0
@@ -340,7 +447,8 @@ const teams = [
                 name: "Alexandre Fernandes",
                 nick: "Cavalo",
                 role: "sup",
-                overallHistory: [72, 72, 67, 70],
+                overallHistory: [72, 72, 67, 70, 74, 81, 78, 73],
+                starter: true,
                 country: "br",
                 mvp: 0,
                 bagre: 1
@@ -358,17 +466,19 @@ const teams = [
                 name: "Taemin Shin",
                 nick: "Hirit",
                 role: "top",
-                overallHistory: [95, 95, 93, 91],
+                overallHistory: [95, 95, 93, 91, 93, 88, 80, 81],
+                starter: true,
                 country: "kr",
-                mvp: 0,
-                bagre: 0
+                mvp: 1,
+                bagre: 1
             },
             {
                 id: 32,
                 name: "Felipe Brombilla",
                 nick: "Ranger",
                 role: "jg",
-                overallHistory: [83, 78, 88, 90],
+                overallHistory: [83, 78, 88, 90, 91, 88, 85, 84],
+                starter: true,
                 country: "br",
                 mvp: 2,
                 bagre: 1
@@ -378,19 +488,21 @@ const teams = [
                 name: "Taehun Kim",
                 nick: "Lava",
                 role: "mid",
-                overallHistory: [96, 91, 92, 90],
+                overallHistory: [96, 91, 92, 90, 90, 88, 79, 83],
+                starter: true,
                 country: "kr",
-                mvp: 1,
-                bagre: 0
+                mvp: 3,
+                bagre: 1
             },
             {
                 id: 34,
                 name: "Lucas Flores",
                 nick: "Netuno",
                 role: "adc",
-                overallHistory: [82, 65, 80, 89],
+                overallHistory: [82, 65, 80, 89, 91, 89, 89, 90],
+                starter: true,
                 country: "br",
-                mvp: 2,
+                mvp: 3,
                 bagre: 1
             },
             {
@@ -398,9 +510,10 @@ const teams = [
                 name: "Vinicius Viana",
                 nick: "Zay",
                 role: "sup",
-                overallHistory: [70, 59, 71, 82],
+                overallHistory: [70, 59, 71, 82, 86, 83, 85, 82],
+                starter: true,
                 country: "br",
-                mvp: 0,
+                mvp: 1,
                 bagre: 1
             },
         ]
@@ -416,7 +529,8 @@ const teams = [
                 name: "Leonardo Souza",
                 nick: "Robo",
                 role: "top",
-                overallHistory: [95, 93, 85, 83],
+                overallHistory: [95, 93, 85, 83, 77, 76, 72, 76],
+                starter: true,
                 country: "br",
                 mvp: 0,
                 bagre: 2
@@ -426,29 +540,32 @@ const teams = [
                 name: "Park Jong-hoon",
                 nick: "Croc",
                 role: "jg",
-                overallHistory: [92, 92, 86, 82],
+                overallHistory: [92, 92, 86, 82, 76, 72, 66, 74],
+                starter: true,
                 country: "kr",
-                mvp: 1,
-                bagre: 1
+                mvp: 2,
+                bagre: 3
             },
             {
                 id: 38,
                 name: "Thiago Sartori",
                 nick: "Tinowns",
                 role: "mid",
-                overallHistory: [95, 95, 91, 89],
+                overallHistory: [95, 95, 91, 89, 85, 82, 79, 84],
+                starter: true,
                 country: "br",
-                mvp: 1,
-                bagre: 0
+                mvp: 4,
+                bagre: 1
             },
             {
                 id: 39,
                 name: "Geomsoo Mun",
                 nick: "Route",
                 role: "adc",
-                overallHistory: [91, 94, 89, 88],
+                overallHistory: [91, 94, 89, 88, 81, 78, 80, 84],
+                starter: true,
                 country: "kr",
-                mvp: 1,
+                mvp: 2,
                 bagre: 0
             },
             {
@@ -456,7 +573,8 @@ const teams = [
                 name: "Denilson Oliveira",
                 nick: "Ceos",
                 role: "sup",
-                overallHistory: [93, 94, 90, 90],
+                overallHistory: [93, 94, 90, 90, 84, 80, 80, 82],
+                starter: true,
                 country: "br",
                 mvp: 0,
                 bagre: 0
@@ -474,9 +592,10 @@ const teams = [
                 name: "Euiseok Choi",
                 nick: "Wizer",
                 role: "top",
-                overallHistory: [90, 88, 76, 70],
+                overallHistory: [90, 88, 76, 70, 72, 81, 79, 85],
+                starter: true,
                 country: "kr",
-                mvp: 1,
+                mvp: 4,
                 bagre: 0
             },
             {
@@ -484,17 +603,19 @@ const teams = [
                 name: "Marcos Oliveira",
                 nick: "Cariok",
                 role: "jg",
-                overallHistory: [87, 79, 66, 64],
+                overallHistory: [87, 79, 66, 64, 66, 76, 69, 79],
+                starter: true,
                 country: "br",
-                mvp: 0,
-                bagre: 4
+                mvp: 2,
+                bagre: 5
             },
             {
                 id: 43,
                 name: "Matheus Miranda",
                 nick: "Dynquedo",
                 role: "mid",
-                overallHistory: [84, 79, 77, 80],
+                overallHistory: [84, 79, 77, 80, 79, 84, 84, 88],
+                starter: true,
                 country: "br",
                 mvp: 1,
                 bagre: 0
@@ -504,17 +625,19 @@ const teams = [
                 name: "Youngnnon Joo",
                 nick: "Bvoy",
                 role: "adc",
-                overallHistory: [92, 91, 83, 82],
+                overallHistory: [92, 91, 83, 82, 80, 83, 83, 89],
+                starter: true,
                 country: "kr",
-                mvp: 0,
-                bagre: 0
+                mvp: 1,
+                bagre: 1
             },
             {
                 id: 45,
                 name: "Yan Neves",
                 nick: "Damage",
                 role: "sup",
-                overallHistory: [81, 79, 68, 67],
+                overallHistory: [81, 79, 68, 67, 65, 73, 68, 76],
+                starter: true,
                 country: "br",
                 mvp: 0,
                 bagre: 0
@@ -532,9 +655,10 @@ const teams = [
                 name: "Felipe Boal",
                 nick: "Boal",
                 role: "top",
-                overallHistory: [67, 73, 81, 85],
+                overallHistory: [67, 73, 81, 85, 85, 83, 87, 84],
+                starter: true,
                 country: "br",
-                mvp: 1,
+                mvp: 2,
                 bagre: 0
             },
             {
@@ -542,9 +666,10 @@ const teams = [
                 name: "Gabriel Lemos",
                 nick: "Aegis",
                 role: "jg",
-                overallHistory: [90, 91, 91, 91],
+                overallHistory: [90, 91, 91, 91, 91, 88, 90, 89],
+                starter: true,
                 country: "br",
-                mvp: 0,
+                mvp: 2,
                 bagre: 0
             },
             {
@@ -552,27 +677,41 @@ const teams = [
                 name: "Adriano Perassoli",
                 nick: "Avenger",
                 role: "mid",
-                overallHistory: [65, 80, 83, 84],
+                overallHistory: [65, 80, 83, 84, 82, 77, 74, 69],
+                starter: true,
                 country: "br",
                 mvp: 1,
-                bagre: 1
+                bagre: 3
             },
             {
                 id: 49,
                 name: "Alexandre Santos",
                 nick: "Titan",
                 role: "adc",
-                overallHistory: [93, 94, 95, 93],
+                overallHistory: [93, 94, 95, 93, 92, 87, 87, 83],
+                starter: true,
                 country: "br",
                 mvp: 3,
-                bagre: 0
+                bagre: 3
             },
             {
                 id: 50,
                 name: "Wonyoung Choi",
                 nick: "Kuri",
                 role: "sup",
-                overallHistory: [82, 88, 91, 91],
+                overallHistory: [82, 88, 91, 91, 91, 87, 87],
+                starter: false,
+                country: "kr",
+                mvp: 0,
+                bagre: 0
+            },
+            {
+                id: 501,
+                name: "",
+                nick: "Scamber",
+                role: "sup",
+                overallHistory: [0, 0, 0, 0, 0, 0, 50, 68, 69],
+                starter: true,
                 country: "kr",
                 mvp: 0,
                 bagre: 0
@@ -606,7 +745,7 @@ class DB {
             return player;
         });
 
-        team.overall = team.players.reduce((total, player) => total + player.overall, 0)/team.players.length;
+        team.overall = (team.players.reduce((total, player) => total + player.overall, 0)/team.players.length).toFixed(1);
 
         return team;
     }
@@ -616,18 +755,21 @@ class DB {
         // Processamento de Dados
         let teamList = teams.map(team => {
             let overall = team.players.reduce((total, player) => {
-                let current = player.overallHistory.length - 1;
-
-                return total + player.overallHistory[current];
+                if(player.starter){
+                    let current = player.overallHistory.length - 1;
+                    return total + player.overallHistory[current];
+                }else{
+                    return total;
+                }
             }, 0);
 
-            overall = overall/team.players.length;
+            overall = overall/5;
 
             return{
                 id: team.id,
                 name: team.name,
                 img: team.img,
-                overall: overall
+                overall: overall.toFixed(1)
             }
         });
 
@@ -734,6 +876,16 @@ class DB {
         return [
             {name: "Brasil", value: "br", img: "/country/br.svg"},
             {name: "Coreia do Sul", value: "kr", img: "/country/kr.svg" }
+        ]
+    }
+
+    static getTiers(){
+        return [
+            {name: "Academy", value: 50},
+            {name: "Bagre", value: 60},
+            {name: "Mediano", value: 70},
+            {name: "Bom", value: 80},
+            {name: "God", value: 90}
         ]
     }
 }

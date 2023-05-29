@@ -1,7 +1,12 @@
+import { useState } from "react";
+
 const Filter = ({value, setValue, data, placeholder}) => {
+    const [name, setName] = useState('');
 
     const handleFilter = (itemValue) =>{
         setValue(itemValue);
+        let item = data.find(item => item.value == itemValue);
+        setName(item != undefined ? item.name : "");
     }
 
     return(
@@ -10,7 +15,7 @@ const Filter = ({value, setValue, data, placeholder}) => {
                 type="text" 
                 name="role" 
                 placeholder={placeholder} 
-                value={value}
+                value={name}
                 readOnly
                 onFocus={e => e.target.parentElement.classList.add('focus')}
                 onBlur={e => e.target.parentElement.classList.remove('focus')} />

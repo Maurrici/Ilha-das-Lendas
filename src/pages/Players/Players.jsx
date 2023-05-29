@@ -12,6 +12,7 @@ const Players = () => {
     const roles = DB.getRoles();
     const coutries = DB.getCountries();
     const teams = DB.getTeams();
+    const tiers = DB.getTiers();
 
     const [playersList, setPlayersList] = useState([]);
     
@@ -19,6 +20,7 @@ const Players = () => {
     const [playersFiltered, setPlayersFiltered] = useState(players);
     const [role, setRole] = useState('');
     const [country, setCountry] = useState('');
+    const [tier, setTier] = useState('');
     const [team, setTeam] = useState('');
     const [page, setPage] = useState(1);
     const [total, setTotal] = useState(Math.ceil(playersFiltered.length/10));
@@ -38,7 +40,11 @@ const Players = () => {
         if(country !== ''){
             setPlayersFiltered((previousList) => previousList.filter(item => item.country === country));
         }
-    }, [role, team, country, players]);
+
+        if(tier != ''){
+            setPlayersFiltered((previousList) => previousList.filter(item => item.overall >= tier && item.overall < (tier + 10)));
+        }
+    }, [role, team, country, players, tier]);
 
     // Mudança de páginas
     useEffect(() => {
@@ -66,6 +72,9 @@ const Players = () => {
                         </Col>
                         <Col sm={12} md>
                             <Filter value={team} setValue={setTeam} data={teams} placeholder="Time" />
+                        </Col>
+                        <Col sm={12} md>
+                            <Filter value={tier} setValue={setTier} data={tiers} placeholder="Tier" />
                         </Col>
                         <Col sm={12} md>
                             <Filter value={country} setValue={setCountry} data={coutries} placeholder="Nacionalidade" />
